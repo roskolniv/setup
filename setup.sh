@@ -36,7 +36,7 @@ function initializePlatform {
   set -e
   if [[ "$platform" == 'Darwin' ]]; then
     # Handle an OSX system - assumes XCode is installed (LAME!)...
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
+    #/usr/bin/ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
 
     brew install git
     brew install macvim
@@ -71,7 +71,7 @@ function initializeRepositories {
   mkdir -p $repositories
   cd $repositories
 
-  git clone https://github.com/cdata/setup.git
+  git clone https://github.com/roskolniv/setup.git
 
   mkdir -p $support
   cd $support
